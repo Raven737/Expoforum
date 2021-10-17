@@ -1,0 +1,55 @@
+.menu--notunderline .menu__link:hover {
+    border-bottom: 1px solid transparent;
+}
+
+// --------------------------------------- //
+
+.menu {
+    &__list {
+        display           : flex;
+        justify-content   : space-between;
+        list-style        : none;
+        padding           : 0; // прибирає вбудований в ul список padding-left: 40px.
+        // height         : 100%;
+        max-width         : 586px;
+
+        &--horizontal {
+            align-items: center;
+        }
+
+        &>*:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__link {
+        display        : flex;
+        text-decoration: none;
+        color          : #fff;
+        border-bottom  : 1px solid transparent;
+
+        &--active,
+        &:hover {
+            border-bottom: 1px solid;
+            color        : #FFC41E;
+        }
+    }
+}
+
+.menu__list--vertical {
+    flex-direction: column;
+}
+
+.menu__list--vertical>.menu__item {
+    padding-bottom: 15px;
+}
+
+.menu__link--vertical {
+    display: inline-block;
+}
+
+@media(max-width: 1024px) {
+    .header .menu {
+        display: none;
+    }
+}

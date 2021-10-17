@@ -1,0 +1,38 @@
+@import '../../node_modules/normalize.css/normalize';
+
+$white      : #fff;
+$light-grey : #FAF3E3;
+$blue       : #2378FC;
+$orange     : #FFC41E;
+$red        : #F6404F;
+$light-black: #2E373B;
+$black      : #000;
+
+body {
+    font-family: sans-serif;
+    font-size  : 16px;
+    color      : $light-black;
+}
+
+* {
+    margin: 0;
+}
+
+@import '_container';
+@import '_header';
+@import '_logo';
+@import '_menu';
+@import '_right-bar';
+@import '_burger';
+
+@import '_info';
+@import '_events';
+@import '_news';
+
+@import '_card';
+@import '_gallery';
+
+@import '_footer';
+@import '_subscrible';
+
+// @import '_dev';

@@ -1,0 +1,29 @@
+.menu__svg {
+    --color-1: #fff;
+}
+
+.menu__link:hover .menu__svg {
+    --color-1: #FFC41E;
+}
+
+.icon {
+    width : 20px;
+    height: 17px;
+    margin: auto;
+}
+
+.icon+span {
+    padding-left: 10px;
+}
+
+.menu__list--icon {
+    // display: block;
+}
+
+.menu__item--icon {
+    display: inline-block;
+}
+
+.menu__link--icon:hover {
+    border-bottom: 1px solid transparent;
+}

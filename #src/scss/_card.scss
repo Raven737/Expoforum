@@ -1,0 +1,31 @@
+.card {
+    width        : 350px;
+    margin-bottom: 18px;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text {
+        font-style : normal;
+        font-weight: normal;
+        font-size  : 14px;
+        line-height: 135%;
+        margin     : 10px 0 0;
+        color      : $light-black;
+    }
+
+    &__text--top {
+        margin: 20px 0 0;
+    }
+
+    &__name {
+        color    : $red;
+        font-size: 21px;
+        margin   : 10px 0 0;
+    }
+
+    &__name--upercase {
+        text-transform: uppercase;
+    }
+}

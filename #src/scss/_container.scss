@@ -1,0 +1,51 @@
+.container {
+    max-width: 1110px;
+    margin   : 0 auto;
+    padding  : 75px 15px;
+
+    &__inner {
+        padding        : 0 -15px;
+        display        : flex;
+        justify-content: space-between;
+        flex-wrap      : wrap;
+    }
+
+    &__title {
+        font-style : normal;
+        font-weight: 500;
+        font-size  : 30px;
+        line-height: 130%;
+    }
+
+    &__title--black {
+        color: $light-black;
+    }
+
+    &__link {
+        text-decoration: none;
+        margin         : auto 0;
+    }
+
+    &__link-inner {
+        border-bottom: 1px solid $black;
+        font-style   : normal;
+        font-weight  : 500;
+        font-size    : 21px;
+    }
+
+    &__link::after {
+        content            : '';
+        background-image   : url(../images/icons/Arrow_black.svg);
+        background-position: center;
+        background-repeat  : no-repeat;
+        padding            : 8px 6px 8px 20px;
+        margin-left        : 15px;
+    }
+
+    @media(max-width: 768px) {
+        &__inner {
+            flex-direction : column;
+            justify-content: flex-start;
+        }
+    }
+}

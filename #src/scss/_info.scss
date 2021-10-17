@@ -1,0 +1,18 @@
+.info {
+    background-color: $blue;
+    color           : $white;
+
+    & .container__title {
+        margin-bottom: 30px;
+    }
+
+    @media(max-width: 1024px) {
+        .block__col {
+            width: 50%;
+        }
+
+        .block__title {
+            margin-top: 30px;
+        }
+    }
+}

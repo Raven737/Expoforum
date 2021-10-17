@@ -1,0 +1,23 @@
+.gallery {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+
+    &__block {
+        padding-right: 20%;
+    }
+
+    & *+* {
+        margin-top: 59px;
+    }
+
+    & .gallery__img {
+        display: block;
+        width  : 100%;
+    }
+
+}
+
+// @media(max-width: 1024px) {
+    
+// }

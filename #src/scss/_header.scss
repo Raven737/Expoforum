@@ -1,0 +1,173 @@
+.header {
+    color              : #fff;
+    background-image   : url(../images/bgc.jpg);
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    min-height         : 100vh;
+}
+
+.top-line {
+    position       : relative;
+    max-width      : 1560px;
+    margin         : 0 auto;
+    padding        : 30px;
+    border-bottom  : 1px solid #fff;
+    width          : 100%;
+    box-sizing     : border-box;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-style    : normal;
+    font-weight   : bold;
+    font-size     : 64px;
+    text-transform: uppercase;
+    margin        : 150px 0 35px;
+}
+
+.header__signs {
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows   : auto;
+    grid-gap             : 30px;
+    padding-bottom       : 50px;
+}
+
+.sign--big {
+    grid-column     : 1 / 3;
+    grid-row        : 1 / 3;
+    background-color: transparent;
+}
+
+.header .sign--big {
+    padding: 0;
+}
+
+.sign--big .sign__link {
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 16px;
+    line-height: 135%;
+}
+
+.sign__text {
+    font-size: 24px;
+}
+
+.sign {
+    box-sizing    : border-box;
+    // width      : 255px; 
+    padding       : 30px 40px;
+    font-weight   : 500;
+    font-size     : 21px;
+    line-height   : 130%;
+}
+
+.sign__link {
+    font-size      : 14px;
+    line-height    : 135%;
+    text-decoration: none;
+    color          : #fff;
+}
+
+.sign__link::after {
+    content            : '';
+    background-image   : url(../images/icons/Arrow.png);
+    background-position: center;
+    background-repeat  : no-repeat;
+    padding            : 6px 8px 8px 20px;
+}
+
+.sign--blue {
+    background-color: #2378FC;
+    grid-column     : 3 / 4;
+    grid-row        : 1 / 2;
+}
+
+.sign--green {
+    background-color: #30BCC9;
+    grid-column     : 4 / 5;
+    grid-row        : 1 / 2;
+}
+
+.sign--yellow {
+    background-color: #FFC41E;
+    grid-column     : 3 / 4;
+    grid-row        : 2 / 3;
+}
+
+.sign--red {
+    background-color: #F6404F;
+    grid-column     : 4 / 5;
+    grid-row        : 2 / 3;
+}
+
+@media(max-width: 1024px) {
+    .header__signs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows   : repeat(3, 1fr);
+        grid-gap             : 15px;
+    }
+
+    .sign--big {
+        grid-column: 1 / 3;
+        grid-row   : 1 / 2;
+
+    }
+
+    .sign--blue {
+        grid-column: 1 / 2;
+        grid-row   : 2 / 3;
+    }
+
+    .sign--green {
+        grid-column: 2 / 3;
+        grid-row   : 2 / 3;
+    }
+
+    .sign--yellow {
+        grid-column: 1 / 2;
+        grid-row   : 3 / 4;
+    }
+
+    .sign--red {
+        grid-column: 2 / 3;
+        grid-row   : 3 / 4;
+    }
+}
+
+@media(max-width: 768px) {
+    .header__signs {
+        grid-template-columns: 1fr;
+        grid-template-rows   : 5fr;
+        grid-gap             : 5px;
+    }
+
+    .sign--big {
+        grid-column: 1 / 2;
+        grid-row   : 1 / 2;
+
+    }
+
+    .sign--blue {
+        grid-column: 1 / 2;
+        grid-row   : 2 / 3;
+    }
+
+    .sign--green {
+        grid-column: 1 / 2;
+        grid-row   : 3 / 4;
+    }
+
+    .sign--yellow {
+        grid-column: 1 / 2;
+        grid-row   : 4 / 5;
+    }
+
+    .sign--red {
+        grid-column: 1 / 2;
+        grid-row   : 5 / 6;
+    }
+}
