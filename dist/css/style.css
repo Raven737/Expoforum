@@ -645,7 +645,6 @@ body {
 }
 
 .burger {
-  display: none;
   position: absolute;
   top: 30px;
   right: 30px;
@@ -661,16 +660,47 @@ body {
   height: 5px;
   background-color: #fff;
   top: 12px;
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
 }
 
 .burger span::before {
   content: '';
   top: -12px;
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
 }
 
 .burger span::after {
   content: '';
   top: 12px;
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+}
+
+.burger:hover span::before {
+  display: none;
+}
+
+.burger:hover span {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+}
+
+.burger:hover span::after {
+  -webkit-transform: translateY(-12px) rotate(90deg);
+      -ms-transform: translateY(-12px) rotate(90deg);
+          transform: translateY(-12px) rotate(90deg);
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
 }
 
 .info {

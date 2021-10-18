@@ -1,5 +1,5 @@
 .burger {
-    display : none;
+    // display : none;
     position: absolute;
     top     : 30px;
     right   : 30px;
@@ -14,18 +14,36 @@
         height          : 5px;
         background-color: #fff;
         top             : 12px;
+        transition-duration: 0.35s;
     }
 
     & span::before {
-        content  : '';
-        top      : -12px;
-        // transform: rotate(45deg);
+        content: '';
+        top    : -12px;
+        transition-duration: 0.35s;
     }
 
     & span::after {
         content: '';
         top    : 12px;
-        // transform: rotate(135deg);
+        transition-duration: 0.35s;
+    }
+
+    &:hover {
+        span::before {
+            display: none;
+
+        }
+
+        span {
+            transform          : rotate(45deg);
+            transition-duration: 0.35s;
+        }
+
+        span::after {
+            transform          : translateY(-12px) rotate(90deg);
+            transition-duration: 0.35s;
+        }
     }
 
     @media(max-width: 1024px) {
