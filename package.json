@@ -13,7 +13,7 @@
     "normalize.css": "^8.0.1"
   },
   "browserlist": [
-    "last 4 version"
+    "last 5 version"
   ],
   "devDependencies": {
     "browser-sync": "^2.26.14",
